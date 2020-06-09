@@ -1,0 +1,25 @@
+<view class="container">
+		<view class="header">
+			<view class="title"><text>{{actArr.title}}</text></view>
+			<view class="author"><text>发起人：{{actArr.author.admin_name}}</text></view>
+			<view class="createtime"><text>{{actArr.create_time}} 发布</text></view>
+		</view>
+		<view class="detail">
+			<view class="moredetail"><text>详细描述</text></view>
+			<view class="des">{{actArr.description}}</view>
+			<view class="dizhi">
+				<view class="he"><text>地址信息</text></view>
+				<view class="hee">
+					<text>举办地址：{{actArr.ads.detail}}</text>
+				</view>
+				</view>
+			<view class="cc">
+				<view class="he"><text>联系与咨询</text></view>
+				<view class="call"><text>电话：{{actArr.ads.mobile}}</text></view>
+			</view>
+		</view>
+</view>
+<view class="footer">
+			<view class="pre" bindtap="onActivityTap" data-id="{{actArr.id}}"><text>报名活动</text></view>
+		</view>
+

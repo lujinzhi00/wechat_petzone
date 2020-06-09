@@ -1,0 +1,158 @@
+.container
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 20rpx;
+	background-color: #f4f4f4;
+}
+.header
+{
+	width: 95%;
+	height: 130rpx;
+	font-size: 25rpx;
+	padding-top: 10rpx;
+	background-color: white;
+	border-radius: 7px;
+	padding: 0 auto;
+	margin: 0 auto;
+	margin-bottom: 10rpx;
+
+
+}
+.header .title
+{
+	width: 100%;
+	height: 50rpx;
+	font-size: 40rpx;
+	font-family: Kaiti;
+	color: dodgerblue;
+	display: flex;
+	align-items: center;
+	padding-left: 30rpx;
+	border-left: 8rpx solid #fdab14;
+	font-family: Kaiti;
+
+}
+.header .author
+{
+	width: 100%;
+	height: 50rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30rpx;
+	margin-top: 10rpx;
+}
+.header .createtime
+{
+	width: 50%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.detail
+{
+	width: 95%;
+	background-color: white;
+	padding: 0 auto;
+	margin: 0 auto;
+	border-radius: 7rpx;
+}
+.detail .img
+{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.detail .title
+{
+	width: 100%;
+	height: 50rpx;
+	padding-left: 15rpx;
+	border-left: 8rpx solid #fdab14;
+	margin-top: 15rpx;
+}
+.detail image
+{
+	width: 95%;
+	height: 320rpx;
+	margin-top: 20rpx;
+	border-radius: 5rpx;
+}
+.detail .moredetail text
+{
+	font-size: 30rpx;
+	border-bottom: 5rpx solid #f4f4f4;
+	position: absolute;
+	bottom: 0;
+}
+.detail .des
+{
+	width: 100%;
+	height: 350rpx;
+	border-bottom: 1rpx solid #f4f4f4;
+	margin-top: 20rpx;
+	font-size: 25rpx;
+	padding: 0 20rpx;
+	line-height: 45rpx;
+	text-indent: 30rpx;
+	color: #949494;
+}
+.detail .address
+{
+	display: flex;
+	width: 100%;
+	height: 360rpx;
+	padding-top: 20rpx;
+	flex-direction: column;
+	padding-left: 30rpx;
+	line-height: 60rpx;
+	font-size: 27rpx;
+	color: #949494;
+}
+.footer
+{
+	width: 100%;
+	height: 150rpx;
+	background-color: white;
+	position:  fixed;
+	bottom: 0;
+}
+.footer .left
+{
+	width: 100%;
+	height: 60rpx;
+	font-size: 30rpx;
+	color: red;
+	display: flex;
+	align-items: center;
+	padding-left: 30rpx;
+}
+.footer .fle .pre
+{
+	width: 80%;
+	height: 70rpx;
+	background-color: #f17843;
+	font-size: 30rpx;
+	border-radius: 65rpx;
+	font-family: Kaiti;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.fle
+{
+	width: 100%;
+	height: 90rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	

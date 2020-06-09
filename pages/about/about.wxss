@@ -1,0 +1,131 @@
+/* pages/about/about.wxss */
+.container
+{
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+.container .head
+{
+	width: 100%;
+	height: 200rpx;
+	background-color: #fdab14;
+}
+.container .content
+{
+	width: 90%;
+	height: 500rpx;
+	left: 5%;
+	top: 120rpx;
+	position: absolute;
+	border-radius: 4px;
+
+}
+.container .content .logo
+{
+	width: 100%;
+	height: 150rpx;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-left: 20rpx;
+	background-color: white;
+	border-radius: 4px;
+}
+.container .content .logo image
+{
+	width: 18%;
+	height: 80%;
+}
+.container .content .show
+{
+	width: 100%;
+	height: 450rpx;
+	background-color: white;
+	margin-top: 20rpx;
+	border-radius: 4px;
+	padding-top: 30rpx;
+}
+.container .content .title
+{
+	width: 100%;
+	height: 50rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20rpx;
+	border-left: 10rpx solid #fdab14;	
+}
+.container .content .text
+{
+	width: 100%;
+	height: 400rpx;
+	padding:30rpx;
+	text-indent: 50rpx;
+	line-height: 50rpx;
+}
+.tel
+{
+	margin-top: 20rpx;
+	width: 100%;
+	height: 60rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20rpx;
+	background-color: white;
+	border-left: 10rpx solid #fdab14;
+	border-radius: 4px;
+}
+.tel image
+{
+	width: 5%;
+	height: 60%;
+}
+.serv
+{
+	margin-top: 20rpx;
+	width: 100%;
+	height: 200rpx;
+	background-color: white;
+	padding-top: 20rpx;
+	border-radius: 4px;
+}
+.tip
+{
+	width: 134rpx;
+	background-color: #fffbed;
+	color: #fdab14;
+	display: flex;
+	float: left;
+	align-items: center;
+	justify-content: center;
+	font-size: 25rpx;
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+}
+.add
+{
+	margin-top: 20rpx;
+	width: 100%;
+	height: 200rpx;
+	background-color: white;
+	padding-top: 20rpx;
+	border-radius: 4px;
+}
+.add .add-detail
+{
+	margin-top: 30rpx;
+	width: 100%;
+	padding-left: 60rpx;
+}
+.beian
+{
+	width: 100%;
+	background-color: white;
+	margin-top: 20rpx;
+	height: 50rpx;
+	text-align: center;
+	color: grey;
+	border-radius: 5px;
+}

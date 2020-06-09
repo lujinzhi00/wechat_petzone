@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/activity/activity",
+    "pages/comment/comment",
+    "pages/serv/serv",
+    "pages/servorder/servorder",
+    "pages/servlist/servlist",
+    "pages/activitylist/activitylist",
+    "pages/missionlist/missionlist",
+	  "pages/setmission/setmission",
+    "pages/mission/mission",
+    "pages/mine/mine",
+    "pages/actcheck/actcheck",
+    "pages/commentlist/commentlist",
+    "pages/mineinfo/mineinfo",
+    "pages/mineserv/mineserv",
+    "pages/minemi/minemi",
+    "pages/setcomment/setcomment",
+    "pages/about/about"
+   
+  
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/index.png",
+      "selectedIconPath": "icons/index_check.png"
+    },
+    {
+      "pagePath": "pages/servlist/servlist",
+      "text": "服务",
+      "iconPath": "icons/activity.png",
+      "selectedIconPath": "icons/activity_check.png"
+    },
+    {
+      "pagePath": "pages/commentlist/commentlist",
+      "text": "交流",
+      "iconPath": "icons/talk.png",
+      "selectedIconPath": "icons/talk_check.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "个人中心",
+      "iconPath": "icons/me.png",
+      "selectedIconPath": "icons/me_check.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

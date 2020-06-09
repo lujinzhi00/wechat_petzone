@@ -1,0 +1,142 @@
+.container
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 1rpx;
+}
+.header
+{
+	width: 100%;
+	height: 150rpx;
+	position: relative;
+	font-size: 25rpx;
+	padding-top: 10rpx;
+	margin-bottom: 1rpx;
+	background-color: white;
+}
+.header .title
+{
+	width: 100%;
+	height: 100rpx;
+	font-size: 50rpx;
+	font-family: Kaiti;
+	position: absolute;
+	line-height: 100rpx;
+	top: 0;
+	left: 0;
+	color: dodgerblue;
+	text-align: center;
+}
+.header .author
+{
+	width: 50%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 15%;
+
+}
+.header .createtime
+{
+	width: 50%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.detail
+{
+	width: 100%;
+	margin-top: 1rpx;
+	background-color: white;
+}
+.detail .moredetail
+{
+	width: 100%;
+	height: 100rpx;
+	border-bottom: 1rpx solid #f4f4f4;
+	margin-top: 3rpx;
+	position: relative;
+	padding-left: 20rpx;
+
+}
+.detail .moredetail text
+{
+	font-size: 40rpx;
+	border-bottom: 5rpx solid #f4f4f4;
+	position: absolute;
+	bottom: 0;
+	color: dodgerblue;
+}
+.detail .des
+{
+	width: 100%;
+	height: 450rpx;
+	padding: 40rpx 40rpx;
+	font-size: 30rpx;
+}
+.detail .dizhi
+{
+	width: 100%;
+	height: 250rpx;
+	padding-left: 20rpx;
+
+}
+.detail  .he
+{
+	width: 100%;
+	height: 50rpx;
+	border-bottom: 1rpx solid #f4f4f4;
+	color: dodgerblue;
+}
+.detail .dizhi .hee
+{
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 30rpx;
+	padding-left: 20rpx;
+}
+.detail .cc
+{
+	width: 100%;
+	height: 300rpx;
+	padding-left: 20rpx;
+
+}
+.detail .cc .call
+{
+	width: 100%;
+	height: 150rpx;
+	line-height: 100rpx;
+	font-size: 30rpx;
+	padding-left: 20rpx;
+}
+.footer
+{
+	width: 100%;
+	height: 130rpx;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer .pre
+{
+	width: 80%;
+	height: 60rpx;
+	background-color: #f17843;
+	font-size: 30rpx;
+	border-radius: 65rpx;
+	font-family: Kaiti;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	

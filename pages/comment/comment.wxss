@@ -1,0 +1,154 @@
+.container
+{
+	width: 100%;
+	height: auto;
+}
+.container .comment
+{
+	width: 100%;
+	height: 120rpx;
+	margin: 0 auto;
+	padding: 0 auto;
+	position: relative;
+	margin-top: 10rpx;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10rpx;
+}
+
+.container  .title
+{
+	width: 100%;
+	height: 50rpx;
+	padding-left: 20rpx;
+	background-color: white;
+
+}
+.container .comment .nickname
+{
+	width: 100%;
+	height: 50rpx;
+	text-align: right;
+	font-size: 25rpx;
+	margin-top: 18rpx;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20rpx;
+}
+.container .description
+{
+	width: 100%;
+	height: 450rpx;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 auto;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+.container .description .img
+{
+	width: 100rpx;
+	height: 100rpx;
+	margin-bottom: 20rpx;
+	margin-left: 30rpx;
+}
+.container .description .des
+{
+	width: 100%;
+	height: 270rpx;
+	padding: 0 20rpx;
+	color: #5c5859;
+  border-top: 1rpx solid #AB956D;
+}
+.container .replay
+{
+	width: 100%;
+	height: 600rpx;
+	margin: 0 auto;
+	padding: 0 auto;
+	overflow: auto;
+	border-radius: 5px;
+	background-color: white;
+}
+.container .replay .replay-item
+{
+	width: 100%;
+	height: auto;
+	padding-top: 10rpx;
+	margin-bottom: 5px;
+	background-color: rgb(244,244,244,0.5);
+}
+.container .replay .header
+{
+	width: 100%;
+	height: 50rpx;
+	display: flex;
+	font-size: 27rpx;
+	align-items: center;
+	padding-left: 20rpx;
+}
+.container .replay .header .image
+{
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 10rpx;
+}
+.container .replay .header .nickname
+{
+	width: 30%;
+	height: 100%;
+	padding-left: 15rpx;
+}
+.container .replay .content
+{
+	width: 100%;
+	height: auto;
+	font-size: 26rpx;
+	padding-left: 85rpx;
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+	color: #5c5859;
+	padding-right: 20rpx;
+}
+.container .replay .header .createtime
+{
+	width: 55%;
+	height: 100%;
+	text-align: right;
+}
+.container .setreplay
+{
+	width: 100%;
+	height: 420rpx;
+	padding-top: 10rpx;
+	margin-top: 10rpx;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.container .setreplay textarea
+{
+	width: 95%;
+	height: 150px;
+	overflow: hidden;
+	border: 1rpx solid grey;
+	display: flex;
+
+}
+.container .setreplay .pull
+{
+	margin-top: 10rpx;
+	background-color: green;
+	color: white;
+	border-radius: 30rpx;
+	height: 70rpx;
+	width: 60%;
+	font-size: 35rpx;
+}

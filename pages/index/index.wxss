@@ -1,0 +1,175 @@
+/* 轮播图 */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+    margin-bottom:5rpx;
+}
+.slide-image, swiper {
+  width: 100%;
+  height: 185px;
+}
+/* 导航栏 */
+.bannerbar
+{
+	background-color: white;
+	height: 200rpx;
+	width: 100%;
+}
+.bannerbar .bannerbarlist
+{
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 25rpx;
+}
+.bannerbar .bannerbarlist .bannerimg
+{
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+}
+.bannerbar  .bannerimg image
+{
+	width: 100%;
+	height: 100%;
+  border-radius: 50%;
+  
+}
+.bannerbar .bannerbarlist  .bannertext
+{
+	position: absolute;
+	top: 145rpx;
+	width: 100%;
+	text-align: center;
+	height: 50rpx;
+	font-size: 30rpx;
+	color: #5c5859;
+}
+/**
+ * 宠物服务块
+ */
+.co
+{
+	background-color: white;
+}
+.servlist
+{	
+	width: 100%;
+	height: 80rpx;
+	background-color: white;
+	position: relative;
+	border-bottom: 1rpx solid #f4f4f4;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20rpx;
+	margin-top: 10rpx;
+	color: #5c5859;
+}
+.servlist .title
+{
+	border-bottom: 5rpx solid #464646;
+	height: 103%;
+	align-items: center;
+	display: flex;
+	font-size: 35rpx;
+}
+.servlist image
+{
+	width: 5%;
+	height: 50%;
+}
+/**
+ * 最新服务模块
+ */
+.newservlist
+{
+	width: 50%;
+	height: 250rpx;
+	display: inline-block;
+	margin-top: 20rpx;
+	color: #5c5859;
+}
+.newservlist .newservitem
+{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+
+	
+}
+.newservlist .newservitem .newservimg
+{
+		width: 85%;
+		height: 170rpx;
+		position: absolute;
+		left: 28rpx;
+}
+.newservlist .newservimg image
+{
+	width: 100%;
+	height: 100%;
+  border-radius: 5rpx;
+
+}
+.newservlist .newservitem  .newservtitle
+{
+	width: 100%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 31rpx;
+	line-height: 50rpx;
+	font-size: 30rpx;
+}
+.newservlist .newservitem .newservprice
+{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	font-size: 20rpx;
+}
+/**
+ * 最新活动列
+ */
+.actlist
+{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: white;
+	color: #5c5859;
+}
+.actlist .actlistitem
+{
+	width: 100%;
+	height: 90rpx;
+	display: flex;
+	font-family: Kaiti;
+	margin-bottom: 5rpx;
+	border-bottom: 2rpx solid #f4f4f4;
+}
+.actlist .actlistitem .aleft
+{
+	width: 60%;
+	height: 100%;
+	font-size: 35rpx;
+	padding-left: 30rpx;
+	display: flex;
+	align-items: center;
+}
+.actlist .actlistitem .aright
+{
+	width: 30%;
+	height: 100%;
+	font-size: 28rpx;
+	padding-top: 39rpx;
+}

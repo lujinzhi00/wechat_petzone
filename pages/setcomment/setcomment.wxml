@@ -1,0 +1,30 @@
+<head></head>
+<view class="container">
+	<view class="head"><text>发表帖子</text></view>
+	<view class="content">
+		<view class="fir">
+			<view class="title"><text>帖子标题</text></view>
+			<input type="text" placeholder="请输入帖子标题" bindinput="title1" maxlength="10"></input>
+			</view>
+		<view class="sed">
+			<view class="title"><text>帖子内容:</text></view>
+			<textarea name="" id="" cols="40" rows="10" placeholder="请输入描述信息" bindinput="des" maxlength="100"></textarea>
+			</view>
+			<view class='uploadImg'>
+			  <view wx:for="{{image}}" wx:key='feedbackImg'>
+				  <image src="../../icons/del.png" bindtap='delectImg' data-num='{{index}}' class="del"></image>
+			    <image src='{{image[index]}}'></image>
+			  </view>
+			  <image src='../../icons/add.png' bindtap='uploadImg' class='addimg' ></image>
+			</view>
+		<view class="thir">
+			<view class="title"><text>选择帖子类型：</text></view>
+		 <radio-group class="radio-group" bindchange="radioChange">
+		                <radio class="radio" wx:for-items="{{choose}}" wx:key="name" value="{{item.id}}" checked="{{item.checked}}">
+		                    <text>{{item.name}}</text>
+		                </radio>
+		            </radio-group>
+		</view>
+		<button bindtap="onGo" class="btn">发表</button>
+	</view>
+</view>

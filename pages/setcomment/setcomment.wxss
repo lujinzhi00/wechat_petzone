@@ -1,0 +1,120 @@
+.container
+{
+	width: 95%;
+	height: auto;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+.container .head
+{
+	width: 100%;
+	height: 100rpx;
+	text-align: center;
+	font-size: 50rpx;
+	font-family: Kaiti;
+	margin-bottom: 20rpx;
+	background-color: white;
+	margin-top: 20rpx;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.container .content
+{
+	width: 100%;
+	height: 1000rpx;
+	margin-top: 10rpx;
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: white;
+	border-radius: 5rpx;
+}
+.container .content .fir
+{
+	width: 100%;
+	height: 140rpx;
+	display: flex;
+	flex-direction: column;
+
+}
+.container .content .sed
+{
+	width: 100%;
+	height: 350rpx;
+	display: flex;
+	flex-direction: column;
+
+}
+.container .content .thir
+{
+	width: 100%;
+	height: 150rpx;
+	display: flex;
+	flex-direction: column;
+}
+.container .content input
+{
+	width: 98%;
+	border-bottom: 1rpx solid #AB956D;
+	height: 80rpx;
+	font-size: 32rpx;
+	padding-left: 10rpx;
+}
+textarea 
+{
+	width: 100%;
+	font-size: 32rpx;
+	padding-left: 10rpx;
+}
+.container .content .btn
+{
+	width: 90%;
+	margin-top: 50rpx;
+	background-color: #AB956D;
+	color: white;
+	
+
+}
+.container .content .title
+{
+	width: 100%;
+	height: 50rpx;
+	padding-left: 10rpx;
+	border-left: 8rpx solid #fdab14;
+	margin-top: 15rpx;
+	margin-bottom: 20rpx;	
+}
+.container .content .radio
+{
+	width: 40%;
+	margin-left: 5%;
+}
+.uploadImg
+{
+	width: 100%;
+	height: 150rpx;
+	border-bottom: 1rpx solid #AB956D;
+	padding-left: 8rpx;
+	display: flex;
+	flex-direction: row;
+}
+.uploadImg image
+{
+	width: 130rpx;
+	height: 130rpx;	
+	margin-right: 10px;
+}
+.uploadImg .del
+{
+	width: 25rpx;
+	height: 25rpx;
+	z-index: 9999;
+	position: relative;
+	background-color: white;
+	opacity: 0.5;
+	bottom: 102rpx;
+	left: 72px;
+}
+

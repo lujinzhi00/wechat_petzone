@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+	  "servshow":"../../components/servshow/servshow",
+	  "servonline":"../../components/servonline/servonline"
+  }
+}

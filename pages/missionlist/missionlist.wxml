@@ -1,0 +1,34 @@
+<view class="container">
+	<view class="header">
+			<text>任务列表</text>
+	</view>
+	<!-- 下拉框组件 -->
+		<view class="changelist">
+			<view class="changeitem" bindtap="change">
+				<text class="{{colorflag==1?'color':''}}">{{showtip}}</text>
+				<image src="{{flag?simg:fimg}}"></image>
+			</view>
+			<view class="select_box {{selectflag?'hide':''}}">
+				<block wx:for="{{selectlist}}" wx:key="item">
+					<view class="select_item {{colorid==index?'selectcolor':''}}" bindtap="select" data-name="{{item}}" data-id="{{index}}">{{item}}</view>
+				</block>
+			</view>
+		<view class="reputation {{colorflag==2?'color':''}}" bindtap="selectRe"><text>信誉</text></view>
+		<view class="time {{colorflag==3?'color':''}}" bindtap="selectTi"><text>发布时间</text></view>
+		</view>
+	<view class="content">
+		<block wx:for="{{missionArr}}" wx:key="item">
+			<view class="missionitem" bindtap="onMissionDetail" data-id="{{item.id}}">
+				<image src="../../icons/missionlist.png"></image>
+				<view class="right">
+				<view class="title"><text>{{item.title}}</text></view>
+				<view class="author"><text>发布人：{{item.nickname}}</text></view>
+				<view class="pay"><text>报酬：{{item.pay}}元</text></view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class="setmission" bindtap="onCheck" ><image src="../../icons/setmission.png"></image></view>
+</view>
+
+

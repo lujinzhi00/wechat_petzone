@@ -1,0 +1,120 @@
+.con
+{
+	width: 100%;
+	height: auto;
+}
+ .mission-item
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin-top: 15rpx;
+	border-bottom: 1rpx solid white;
+}
+.mission-item .head
+{
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	padding: 0 30rpx;
+}
+ .mission-item .head image
+{
+	width: 100rpx;
+	height: 100rpx;
+	margin-left: 20rpx;
+}
+ .mission-item .head .title
+{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 30rpx;
+	font-size: 30rpx;
+}
+ .mission-item .head .cancel
+{
+	width: 20%;
+	height: 100%;
+	margin-left: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+ .mission-item  .btn
+{
+	width: 60%;
+	height: 40%;
+	background-color:  #ff4200;
+	color: white;
+	font-size: 20rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30rpx;
+}
+/* 内容 */
+.mission-item .content
+{
+	width: 100%;
+	height: 150rpx;
+	font-size: 25rpx;
+	padding: 20rpx 20rpx 0 60rpx;
+}
+.mission-item .content .cflex
+{
+	width: 100%;
+	height: 150rpx;
+	display: flex;
+	flex-direction: column;
+}
+.mission-item .content .receive
+{
+	width: 100%;
+	height: 80rpx;
+	display: flex;
+	align-items: center;
+
+}
+.mission-item .content .receive text
+{
+	margin-right: 30rpx;
+}
+.mission-item .content .cflex .but
+{
+	width: 12.5%;
+	height: 49%;
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 18rpx;
+	color: white;
+	font-size: 20rpx;
+}
+.hide
+{
+	display: none!important;
+}
+.show
+{
+	display: block;
+}
+/* tip */
+.mission-item .tip
+{
+	width: 100%;
+	height: 30rpx;
+	display: flex;
+	justify-content: center;
+}
+.mission-item .tip image
+{
+	width: 20rpx;
+	height: 20rpx;
+}
+

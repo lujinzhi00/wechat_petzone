@@ -1,0 +1,50 @@
+<view class="container">
+	<view class="tab">
+		<block wx:for="{{tab}}" wx:key="item">
+			<view class="item" bindtap="choose" data-current="{{index}}">{{item}}</view>
+		</block>
+		<view class="bottombar" style="left:{{itemcurrent*50+15}}%;"></view>
+	</view>
+	<swiper bindchange="switchTab"  duration="300" current="{{itemcurrent}}" style="height:{{itemcurrent=='1'?323+len*323:323+length*323}}rpx;">
+		<swiper-item>
+			<block wx:for="{{preOrder}}" wx:key="item">
+				<view class="order">
+					<view class="head">订单号：{{item.order_no}}</view>
+						<view class="content">
+							<image src="{{cdn+item.imgurl}}"></image>
+							<view class="right">
+								<view class="title">内容：{{item.title}}</view>
+								<view class="address">地址：{{item.detail}}</view>
+								<view class="stime">起始：{{item.start_time}}</view>
+								<view class="etime">结束：{{item.end_time}}</view>
+							</view>
+					</view>
+					<view class="foot">
+						<view class="price">{{item.price}}元</view>
+						<view class="btn" bindtap="cancelOrder" data-id="{{item.id}}">取消</view>
+					</view>
+				</view>
+			</block>
+		</swiper-item>
+		<swiper-item>
+			<block wx:for="{{finOrder}}" wx:key="item">
+				<view class="order">
+					<view class="head">订单号：{{item.order_no}}</view>
+						<view class="content">
+							<image src="{{cdn+item.imgurl}}"></image>
+							<view class="right">
+								<view class="title">内容：{{item.title}}</view>
+								<view class="address">地址：{{item.detail}}</view>
+								<view class="stime">起始：{{item.start_time}}</view>
+								<view class="etime">结束：{{item.end_time}}</view>
+							</view>
+					</view>
+					<view class="foot">
+						<view class="price">{{item.price}}元</view>
+						<view class="btn" bindtap="delOrder" data-id="{{item.id}}">删除</view>
+					</view>
+				</view>
+			</block>
+		</swiper-item>
+	</swiper>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "head": "../../components/head/head"
+    },
+  "navigationBarTitleText": "服务详情"
+}

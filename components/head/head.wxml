@@ -1,0 +1,14 @@
+<view class="container"> 
+<!-- <image src="../../icons/meun.png"  bindtap="hid_bar" class="im"></image> -->
+<text class="te">萌宠乐园</text>
+</view>
+<!-- <view class='bar {{open ? "hide" : "show" }}'>
+<navigator url="../../pages/index/index" open-type="switchTab">首页</navigator>
+<navigator url="../../pages/introduce/about/about">关于我们</navigator>
+<navigator url="../../pages/introduce/introduce/introduce">程序介绍</navigator>
+<navigator url="../../pages/introduce/contact/contact">联系方式</navigator>
+</view> -->
+
+
+
+

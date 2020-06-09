@@ -1,0 +1,16 @@
+<head></head>
+<view class="container">
+	<view class="content">
+		<view class="fir">
+			<view class="ti"><text>标题：</text></view>
+			<input type="text" placeholder="请输入任务标题" bindinput="title1"  maxlength="8"></input></view>
+		<view class="sed">
+			<view class="ti"><text>任务内容:</text></view>
+			<textarea name="" id="" cols="40" rows="10" placeholder="请输入描述信息" bindinput="des" maxlength="120"></textarea>
+			</view>
+		<view class="thir">
+			<view class="ti"><text>报酬：</text></view>
+			<input type="text" placeholder="请输入任务报酬(元)" bindinput="pay1" maxlength="3"></input></view>
+		<button bindtap="onGo" class="btn">发布任务</button>
+	</view>
+</view>

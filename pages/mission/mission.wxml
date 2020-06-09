@@ -1,0 +1,35 @@
+<head></head>
+<view class="container">
+	<view class="head">
+		<image src="../../icons/detail.png"></image>
+		<view class="title">
+			<text>{{missionInfo.title}}</text>
+		</view>
+		<view class="rep">
+			<text>{{missionInfo.reputation}}</text>
+		</view>
+		<view class="left"><text>发布人：{{missionInfo.nickname}}</text></view>
+		<view class="right">
+			<text>报酬：</text>
+			<text class="colo">{{missionInfo.pay}}元</text>
+			
+			</view>
+	</view>
+	<view class="content">
+		<view class="lead"><text>任务简介</text></view>
+		<view class="warn" bindtap="onchangetip" style="height: {{warnheight}};">
+			<image src="../../icons/safe.png"></image>
+			<view class="tip"><text>请注意，任务都是由个人发布，商家负责大概的审核有无违法信息，任务右上角的浅绿色字体是用户的信誉值，信誉值只有在完成相关的活动，以及任务才会增加，反之则会扣除。请您在接任务的仔细查看任务的相关信息，确保已知任务的相关内容，目的等重要内容。再考虑是否要接下任务。</text></view>
+		</view>
+		<view class="body">
+			<view class="tip2"><text>详细描述</text></view>
+			<view class="des"><text>{{missionInfo.description}}</text></view>
+			</view>	
+	</view>
+</view>
+<view class="set">
+	<view class="bt" bindtap="ongetmission" data-id="{{missionInfo.id}}">
+		<text>接此任务</text>
+	</view>
+</view>
+

@@ -1,0 +1,62 @@
+<view class="container">
+	<view class="bg">
+		<view class="login" bindtap="onGomineinfo" data-avurl="{{avurl}}">
+			<view  class="loginimage"><image src="{{avurl}}" class="image"></image></view>
+			<view class="usname">
+				<text>{{nickname}}</text>
+				<view class="repu">信誉值：<text>{{userInfo.reputation}}</text></view>
+			</view>
+			<image src="../../icons/rightb.png" class="right"></image>
+		</view>
+	</view>
+	<view class="tab">
+		<button class="activity" bindgetuserinfo="bindGetUserInfo" open-type="getUserInfo">
+				<text>同步微信信息</text>
+				<image src="../../icons/righta.png"></image>
+			</button>
+		<view class="activity" bindtap="onGominemission">
+				<text>我的任务</text>
+				<image src="../../icons/righta.png"></image>
+			</view>
+			<view class="activity" bindtap="onGomineserv">
+				<text>我的预约</text>
+				<image src="../../icons/righta.png"></image>
+			</view>
+		<view class="act" >
+			<view class="activity" bindtap="onChange">
+				<text>我的活动</text>
+				<image src="{{isshow?showurl:downurl}}"></image>
+			</view>
+				<block wx:for="{{actArr}}" wx:key="item">
+					<view class="co {{isshow?'hide':'show'}}" bindtap="onActTap" data-id="{{item.id}}">
+					<image src="../../icons/act.png"></image>
+					<view class="right">
+						<view class="title">{{item.title}}</view>
+						<view class="author">发起人：{{item.admin_name}}</view>
+						<view class="time">{{item.time}}</view>
+					</view>
+						</view>
+				</block>
+		</view>
+		<view class="teizi">
+			<view class="activity" bindtap="onChange1">
+				<text>我的帖子</text>
+				<image src="{{iscomment?showurl:downurl}}"></image>
+				</view>
+			<view>
+			</view>
+			<view class="tie {{iscomment?'hide':'show'}}">
+				<block wx:for="{{commentArr}}" wx:key="item">
+					<view class="comm">
+						<view class="coo" bindtap="onActTap1" data-id="{{item.id}}">
+							<image src="{{item.type==1?comurl:favurl}}"></image>
+							<view class="cc">{{item.title}}</view>
+						</view>
+						<view class="bt" bindtap="delCom" data-id="{{item.id}}">删除</view>
+					</view>
+				</block>
+			</view>
+		</view>
+			
+	</view>
+</view>

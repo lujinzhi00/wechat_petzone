@@ -1,0 +1,160 @@
+.container
+{
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+.container .title
+{
+width: 95%;
+height: 250rpx;
+margin: 0 auto;
+padding: 0 auto;
+position: relative;
+background-color: white;
+border-radius: 5px;
+margin-top: 10rpx;
+}
+.container .title image
+{
+	width: 300rpx;
+	height: 240rpx;
+	position: absolute;
+	left: 20rpx;
+	top: 10rpx;
+}
+.container .title .right
+{
+width: 52%;
+height: 250rpx;
+position: absolute;
+right: 0;
+font-size: 70rpx;
+font-family: Kaiti;
+color: dodgerblue;
+line-height: 317rpx;
+
+
+}
+.container .title .right text
+{
+	margin-left: 30rpx;
+}
+.container .title .right image
+{
+width: 50rpx;
+height: 50rpx;
+position: absolute;
+top: 128rpx;
+left: 162rpx;
+
+
+}
+.container .best{
+		width: 95%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 auto;
+		background-color: white;
+		border-radius: 7px;
+		margin-top: 10rpx;
+}
+.container .best .best-title
+{
+	width: 100%;
+	height: 80rpx;
+	font-family: Kaiti;
+	font-size: 50rpx;
+	color: dodgerblue;
+	border-bottom: 1rpx solid #f4f4f4;
+	display: flex;
+	align-items: center;
+	padding-left: 10rpx;
+
+}
+.container .best .best-contant
+{
+	width: 100%;
+	height: 80rpx;
+	position: relative;
+	background-color: white;
+	margin-top: 2rpx;
+	border-bottom: 3rpx solid #f4f4f4;
+	padding-left: 40rpx;
+}
+.container .best .best-contant image
+{
+	width: 80rpx;
+	height: 80rpx;
+	position: absolute;
+}
+.container .best .best-contant .best-right
+{
+	width: 70%;
+	height: 100%;
+	position: absolute;
+	left: 150rpx;
+	text-align: left;
+	line-height: 80rpx;
+}
+/* 普通帖子 */
+.container .comment
+{
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: white;
+	margin-top: 10rpx;
+	border-radius: 5px;
+}
+.container .comment .comment-title
+{
+	width: 100%;
+	height: 80rpx;
+	font-family: Kaiti;
+	font-size: 50rpx;
+	color: dodgerblue;
+	border-bottom: 1rpx solid #f4f4f4;
+	display: flex;
+	align-items: center;
+	padding-left: 10rpx;
+}
+.container .comment .comment-item{
+	width: 100%;
+	height: 80rpx;
+	position: relative;
+	background-color: white;
+	margin-top: 2rpx;
+	border-bottom: 3rpx solid #f4f4f4;
+	padding-left: 40rpx;
+}
+.container .comment .comment-item image
+{
+	width: 78rpx;
+	height: 78rpx;
+	position: absolute;
+}
+.container .comment .comment-item .comment-right
+{
+	width: 70%;
+	height: 100%;
+	position: absolute;
+	left: 150rpx;
+	text-align: left;
+	line-height: 80rpx;
+}
+.container .setcomment
+{
+	width: 120rpx;
+	height: 120rpx;
+	opacity: 0.5;
+	position: fixed;
+	bottom: 70rpx;
+	right: 40rpx;
+}
+.container .setcomment image
+{
+	width: 100%;
+	height: 100%;
+}

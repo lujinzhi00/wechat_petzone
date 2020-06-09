@@ -1,0 +1,27 @@
+<head></head>
+<view class="container">
+	<view class="title">
+		<image src="../../icons/dog.jpg"></image>
+		<view class="right"><text>交流</text><image src="../../icons/dogge.png"></image><text>天地</text></view>
+	</view>
+	<view class="best">
+		<view class="best-title"><text>置顶帖：</text></view>
+		<block wx:for="{{bestArr}}" wx:key="item">
+			<view class="best-contant" bindtap="onCheck" data-id="{{item.id}}">
+				<image src="../../icons/best.png"></image>
+				<view class="best-right">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="comment">
+		<view class="comment-title"><text>用户帖：</text></view>
+		<block wx:for="{{allArr}}" wx:key="item">
+			<view class="comment-item" bindtap="onCheck" data-id="{{item.id}}">
+				<image wx:if="{{item.type==1}}" src="../../icons/favour.png"></image>
+				<image wx:else src="../../icons/com.png"></image>
+				<view class="comment-right">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="setcomment" bindtap="Go"><image src="../../icons/setmission.png"></image></view>
+</view>

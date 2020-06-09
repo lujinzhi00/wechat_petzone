@@ -1,0 +1,32 @@
+<head></head>
+<view class="container">
+	<view class="comment">
+		<view class="title">{{com.title}}</view>
+		<view class="nickname">
+			<text>作者：{{com.user.nickname}}</text>
+			<text>创建于：{{com.create_time}}</text>
+		</view>
+	</view>
+	<view class="description">
+	<view class="title"><text>帖子详情</text></view>
+	 <view class="des"><text>{{com.description}}</text></view>
+	 <image src="{{com.imgurl}}" bindtap="preImg" data-src="{{com.imgurl}}" data-list="{{com.imgurl}}" class="img"></image>
+	</view>
+	<view class="title"><text>评论</text></view>
+	<view class="replay">
+		<block wx:for="{{rep}}" wx:key="item">
+			<view class="replay-item">
+				<view class="header">
+					<image src="{{item.avurl==null?avurl:item.avurl}}" class="image"></image>
+					<view class="nickname">{{item.nickname}}</view>
+					<view class="createtime">{{item.create_time}}</view>
+				</view>
+				<view class="content">{{item.content}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="setreplay">
+		<textarea name="" id="" cols="30" rows="10" bindinput="repl" value="{{replay}}" maxlength="50"></textarea>
+		<button class="pull" bindtap="pullReplay" data-id="{{com.id}}">发表</button>
+	</view>
+</view>

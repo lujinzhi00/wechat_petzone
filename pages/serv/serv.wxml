@@ -1,0 +1,31 @@
+<view class="container">
+	<block wx:for="{{servDetail}}" wx:key="item">
+		<view class="header">
+			<view class="title"><text>{{item.title}}</text></view>
+			<view class="author">
+				<view><text>{{item.create_time}} 发布</text></view>
+				</view>
+		</view>
+		<view class="detail">
+			<view class="img">
+				<view class="title"><text>服务图片</text></view>
+				<image src="{{item.imgurl}}"></image>
+				</view>
+			<view class="title"><text>详细描述</text></view>
+			<view class="des"><text>{{item.description}}</text></view>
+			<view class="title"><text>服务地址</text></view>
+			<view class="address">
+				<view><text>地址：{{item.ads.detail}}</text></view>
+				<view><text>负责人：{{item.ads.name}}</text></view>
+				<view><text>联系电话：{{item.ads.mobile}}</text></view>
+			</view>
+				
+		</view>
+		<view class="footer">
+			<view class="left"><text>价格：{{item.price}}元</text></view>
+			<view class="fle">
+				<view class="pre" bindtap="onOrderTap" data-id="{{item.id}}"><text>预约服务</text></view>
+			</view>
+		</view>
+	</block>
+</view>

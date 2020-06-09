@@ -1,0 +1,62 @@
+
+<head></head>
+<view class="slider-wrapper">
+<swiper indicator-dots circular>
+<block wx:for="{{bannerArr}}" wx:key="item">
+<swiper-item>
+<image src="{{item.imgurl}}" class="slide-image"></image>
+</swiper-item>
+</block>
+</swiper>
+</view>
+<!-- 导航栏-->
+<view class="bannerbar">
+<navigator class="bannerbarlist" url="../about/about">
+	<view class="bannerimg"><image src="../../icons/one.png"></image></view>
+	<view class="bannertext"><text>关于我们</text></view>
+</navigator>
+<navigator class="bannerbarlist" url="../missionlist/missionlist">
+	<view class="bannerimg"><image src="../../icons/two.png"></image></view>
+	<view class="bannertext"><text>任务天地</text></view>
+</navigator>
+<navigator class="bannerbarlist" url="../activitylist/activitylist">
+	<view class="bannerimg"><image src="../../icons/three.png"></image></view>
+	<view class="bannertext"><text>活动中心</text></view>
+</navigator>
+<navigator class="bannerbarlist" url="../servlist/servlist" open-type="switchTab">
+	<view class="bannerimg"><image src="../../icons/four.png"></image></view>
+	<view class="bannertext"><text>镇店服务</text></view>
+</navigator>
+</view>
+<!--最新服务模块-->
+<navigator url="../servlist/servlist" class="servlist" open-type="switchTab">
+	<view class="title"><text>宠物服务</text></view>
+	<image src="../../icons/rightb.png"></image>
+</navigator>	
+<view class="co">
+	<block wx:for="{{servArr}}" wx:key="item" >
+		<view class="newservlist" bindtap ="onServTap" data-id="{{item.id}}" >
+			<view class="newservitem">
+				<view class="newservimg"><image src="{{item.imgurl}}"></image></view>
+				<view class="newservtitle"><text>{{item.title}}</text></view>
+				<view class="newservprice"><text>{{item.price}}元</text></view>
+			</view>
+		</view>
+	</block>	
+</view>
+<!-- 近期活动 -->
+<navigator url="../activitylist/activitylist" class="servlist">
+	<view class="title"><text>近期活动</text></view>
+	<image src="../../icons/rightb.png"></image>
+</navigator>	
+<!-- 近期活动列表 -->
+<view class="actlist">
+	<block wx:for="{{actArr}}" wx:key="item">
+		<view class="actlistitem" bindtap="onToActivity" data-id="{{item.id}}">
+			<view class="aleft"><text>{{item.title}}</text></view>
+			<view class="aright"><text>发起人:{{item.author.admin_name}}</text></view>
+		</view>
+	</block>
+</view>
+
+

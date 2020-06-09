@@ -1,0 +1,17 @@
+<view class="container">
+	<view class="header">活动中心</view>
+<view class="content">
+	<block wx:for="{{activityArr}}" wx:key="item">
+		<view class="item"  bindtap="onsetname" data-id="{{item.id}}">
+			<image src="../../icons/act.png"></image>
+			<view class="right">
+				<view class="le">
+					<view class="title">{{item.title}}</view>
+					<view class="author">发起人：{{item.author.admin_name}}</view>
+				</view>
+				<view class="time">负责人：{{item.ads.name}}</view>
+			</view>
+		</view>
+	</block>
+</view>
+</view>

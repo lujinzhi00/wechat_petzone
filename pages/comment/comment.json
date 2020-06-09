@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+	  "head":"../../components/head/head"
+  },
+  "navigationBarTitleText": "帖子详情"
+}

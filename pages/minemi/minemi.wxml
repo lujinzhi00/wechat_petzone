@@ -1,0 +1,44 @@
+<view class="container">
+	<view class="tab">
+		<view class="tab-item {{tabcurrent==0?'active':''}}" data-current="0" bindtap="clicktab"><text>发布</text></view>
+		<view class="tab-item {{tabcurrent==1?'active':''}}" data-current="1" bindtap="clicktab"><text>接收</text></view>
+	</view>
+	<view class="content {{tabcurrent==0?'show':''}} ">
+		<view class="item-tab">
+			<block wx:for="{{tabitem}}" wx:key="index">
+				<view class="item-tab-item" data-current="{{index}}" bindtap="clickitem"><text>{{item}}</text></view>
+			</block>
+			<view class="bottom-bar" style="left: {{54+itemcurrent*188}}rpx;"></view>
+		</view>
+		<swiper  bindchange="switchTab"  duration="300" current="{{itemcurrent}}">
+			<swiper-item>
+				<servshow list="{{selfMission}}" bind:myevent="onLoad"></servshow>
+			</swiper-item>
+			<swiper-item >
+				<servshow list="{{selfSetMission}}" bind:myevent="onLoad"></servshow>
+			</swiper-item>
+			<swiper-item >
+			<servonline list="{{selfActMission}}" bind:myevent="onLoad"></servonline>
+			</swiper-item>
+			<swiper-item >
+				<servshow list="{{fMission}}" bind:myevent="onLoad" dflag="{{flag}}"></servshow>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="content {{tabcurrent==1?'show':''}} ">
+		<view class="item-tab">
+			<block wx:for="{{tabitem1}}" wx:key="index">
+				<view class="item-tab-item1" data-current="{{index}}" bindtap="clickitem1"><text>{{item}}</text></view>
+			</block>
+			<view class="bottom-bar" style="left: {{135+itemcurrent1*381}}rpx;"></view>
+		</view>
+	<swiper bindchange="switchTab1"  duration="300" current="{{itemcurrent1}}">
+		<swiper-item>
+			<servonline list="{{gmMission}}" bind:myevent="onLoad" cflag="{{flag}}"></servonline>
+		</swiper-item>
+		<swiper-item>
+			<servshow list="{{gfMission}}" bind:myevent="onLoad" dflag="{{flag}}" cflag="{{flag}}"></servshow>
+		</swiper-item>
+	</swiper>
+	</view>
+</view>

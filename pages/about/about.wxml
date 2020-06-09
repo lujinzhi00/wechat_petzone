@@ -1,0 +1,38 @@
+<view class="container">
+	<view class="head"></view>
+	<view class="content">
+		<view class="logo">
+			<image src="../../icons/dogge.png"></image>
+		</view>
+		<view class="show">
+			<view class="title">
+				<text>乐园介绍</text>
+			</view>
+			<view class="text">
+				<text>宠物乐园是一家集合多功能的连锁项目，本乐园拥有多名资深的宠物训练师，宠物摄影师，宠物医生，人员精良，设备先进。对客户提供各种宠物相关的服务。本乐园还是定期举办活动，反馈给我们客户。</text>
+			</view>
+		</view>
+		<view class="tel" bindtap="callMe">
+			<text>联系电话</text>
+			<image src="../../icons/righta.png"></image>
+		</view>
+		<view class="add" >
+			<view class="title"><text>联系地址</text></view>
+			<view class="add-detail">总部：东莞市松山湖大学路999号</view>
+		</view>
+		<view class="serv">
+			<view class="title">
+				<text>乐园服务</text>
+			</view>
+			<view class="tip">宠物体检</view>
+			<view class="tip">宠物训练</view>
+			<view class="tip">宠粮</view>
+			<view class="tip">宠物美容</view>
+			<view class="tip">宠物营养品</view>
+		</view>
+		<!-- 备案号 -->
+		<view class="beian">
+		<view><text>粤ICP备20020485号</text></view>
+		</view>
+	</view>
+</view>

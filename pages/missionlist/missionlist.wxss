@@ -1,0 +1,170 @@
+page
+{
+	background-color: white;
+}
+.content
+{
+	width: 100%;
+	height: auto;
+}
+.changelist
+{
+	width: 100%;
+	height: 80rpx;
+	display: flex;
+	position: relative;
+	border-bottom: 1rpx solid rgb(253,171,20,0.5);
+	margin-bottom: 20rpx;
+	border-top: 1rpx solid rgb(253,171,20,0.5);
+}
+.changelist .reputation
+{
+	width: 30%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.changelist .time
+{
+	width: 35%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.changeitem
+{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.changeitem image
+{
+	width: 50rpx;
+	height: 50rpx;
+}
+.select_box
+{
+	width: 100%;
+	z-index: 999;
+	background-color: white;
+	position: absolute;
+	top: 80rpx;
+	height: 120rpx;
+}
+.select_box .select_item
+{
+	height: 80rpx;
+	display: flex;
+	font-size: 35rpx;
+	font-family: Kaiti;
+	width: 30%;
+	float: left;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20rpx;
+	border: 1rpx solid rgb(244,244,244,0.5);
+	margin-left: 2%;
+}
+.header
+{
+	width: 100%;
+	text-align: center;
+	font-size: 50rpx;
+	border-bottom: 1rpx solid white;
+	border-radius: 5px;
+	background-color: white;
+	color: green;
+}
+.container
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.missionitem
+{
+	width: 100%;
+	height: 120rpx;
+	position: relative;
+	border-bottom: 1rpx solid #f4f4f4;
+	margin-bottom: 10rpx;
+	border-radius: 5px;
+	margin-top: 12rpx;
+}
+.missionitem image
+{
+	width: 120rpx;
+	height: 120rpx;
+	position: absolute;
+	left: 20rpx;
+}
+.missionitem .right
+{
+	width: 80%;
+	height: 120rpx;
+	position: absolute;
+	right: 0;
+}
+.missionitem .right .title
+{
+	width: 50%;
+	height: 80rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 80rpx;
+
+}
+.missionitem .right .author
+{
+	width: 50%;
+	height: 40rpx;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 25rpx;
+
+}
+.missionitem .right .pay
+{
+	width: 50%;
+	height: 40rpx;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-left: 60px;
+	font-size: 25rpx;
+}
+.container .setmission
+{
+	width: 120rpx;
+	height: 120rpx;
+	opacity: 0.5;
+	position: fixed;
+	bottom: 170rpx;
+	right: 40rpx;
+}
+.container .setmission image
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.hide
+{
+	display: none;
+}
+.color
+{
+	color: #fdab14;
+}
+.selectcolor
+{
+	border:1rpx solid #fdab14!important;
+}
+

@@ -1,0 +1,31 @@
+<head></head>
+<view class="container">
+	<!-- 下单用户的信息 -->
+	<view class="header">
+		<view class="img"><image src="../../icons/info.png"></image></view>
+		<view class="info">
+			<view><text>用户名：{{userArr.nickname}}</text></view>
+			<view><text>手机号：{{userArr.tellphone}}</text></view>
+		</view>
+	</view>
+	<!-- 服务简要信息 -->
+	<block wx:for="{{servArr}}" wx:key="item">
+	<view class="serv">
+			<view class="sinfo">
+				<image src="{{item.imgurl}}"></image>
+				<view class="servt">
+				<view>服务项目:{{item.title}}</view>
+				<view>服务价格:{{item.price}}元</view></view>
+			     </view>
+			<view>地址：{{item.ads.detail}}</view>	
+	</view>
+	<!-- 订单输入信息 -->
+<view class="order">
+		  <view class="to">选择服务日期：</view>
+		  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+		<text>{{orderData}}</text>
+		  </picker>
+	</view>
+	<button class="act" bindtap="onOrder" data-id="{{item.id}}">提交订单信息</button>
+	</block>
+</view>

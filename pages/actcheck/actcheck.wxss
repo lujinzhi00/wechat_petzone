@@ -1,0 +1,144 @@
+/* pages/actcheck/actchack.wxss */
+.container
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.header
+{
+	width: 100%;
+	height: 150rpx;
+	position: relative;
+	font-size: 25rpx;
+	padding-top: 10rpx;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 20rpx;
+}
+.header .title
+{
+	width: 100%;
+	height: 100rpx;
+	font-size: 50rpx;
+	font-family: Kaiti;
+	position: absolute;
+	line-height: 100rpx;
+	top: 0;
+	left: 0;
+	color: dodgerblue;
+	padding-left: 20rpx;
+}
+.header .author
+{
+	width: 50%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 20rpx;
+}
+.header .createtime
+{
+	width: 50%;
+	height: 50rpx;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.detail
+{
+	width: 100%;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 30rpx;
+
+}
+.detail .moredetail
+{
+	width: 100%;
+	height: 100rpx;
+	border-bottom: 1rpx solid #f4f4f4;
+	margin-top: 10rpx;
+	position: relative;
+	padding-left: 20rpx;
+
+}
+.detail .moredetail text
+{
+	font-size: 40rpx;
+	border-bottom: 5rpx solid #f4f4f4;
+	position: absolute;
+	bottom: 0;
+	color: dodgerblue;
+}
+.detail .des
+{
+	width: 100%;
+	height: 500rpx;
+	padding: 0 20rpx;
+	padding-top: 30rpx;
+	font-size: 30rpx;
+}
+.detail .dizhi
+{
+	width: 100%;
+	height: 200rpx;
+}
+.detail  .he
+{
+	width: 100%;
+	height: 50rpx;
+	border-bottom: 1rpx solid #f4f4f4;
+	color: dodgerblue;
+	padding-left: 20rpx;
+
+}
+.detail .dizhi .hee
+{
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	padding-left: 20rpx;
+
+}
+.detail .cc
+{
+	width: 100%;
+	height: 250rpx;
+}
+.detail .cc .call
+{
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	padding-left: 20rpx;
+	font-size: 30rpx;
+}
+.footer
+{
+	width: 100%;
+	height: 120rpx;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer .pre
+{
+	width: 80%;
+	height: 70rpx;
+	background-color: #f17843;
+	font-size: 35rpx;
+	border-radius: 65rpx;
+	font-family: Kaiti;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+	

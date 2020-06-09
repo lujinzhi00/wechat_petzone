@@ -1,0 +1,18 @@
+<head></head>
+<view class="container">
+	<view class="show"><image src="../../icons/mouse.gif"></image></view>
+	<view class="tip">
+		<view class="title"><text>宠物服务</text></view>
+		</view>
+		<block wx:for="{{serArr}}" wx:key="item">
+			<view class="newservlist" bindtap ="onServTap" data-id="{{item.id}}">
+				<view class="newservitem">
+				<view class="newservimg"><image src="{{item.imgurl}}" ></image></view>
+				<view class="newservtitle">
+					<view><text>{{item.title}}</text></view>
+					<view class="price"><text>{{item.price}}元</text></view>
+					</view>
+			</view>
+			</view>
+		</block>
+</view>

@@ -1,0 +1,184 @@
+.container
+{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: #f4f4f4;
+}
+.container .tab
+{
+	width: 100%;
+	height: 80rpx;
+	border-bottom: 1rpx solid grey;
+}
+.container .tab .tab-item
+{
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font-size: 40rpx;
+	font-family: Kaiti;
+	line-height: 81rpx;
+}
+.active
+{
+	border-bottom: 5rpx solid #AB956D ;
+}
+.show
+{
+	display: block!important;
+}
+.container .content
+{
+	display: none;
+	width: 100%;
+	height: auto;
+	margin-top: 20rpx;
+}
+.container .content .item-tab
+{
+	width: 100%;
+	height: 80rpx;
+	background-color: white;
+	position: relative;
+}
+.container .content .item-tab .item-tab-item
+{
+	width: 25%;
+	float: left;
+	height: 100%;
+	line-height: 70rpx;
+	text-align: center;
+}
+.container .content .item-tab .item-tab-item1
+{
+	width: 50%;
+	float: left;
+	height: 100%;
+	line-height: 70rpx;
+	text-align: center;
+}
+.container .content .item-tab .bottom-bar
+{
+	width: 12%;
+	position: absolute;
+	height: 2px;
+	border-radius: 2px;
+	bottom: 0;
+	background-color: red;
+}
+.container .content 
+{
+	height: auto;
+	width: 100%;
+}
+.container .content  swiper
+{
+	height: 900rpx;
+}
+.container .content swiper-item
+{
+	overflow: auto;
+}
+.container .content .con
+{
+	width: 100%;
+	height: auto;
+}
+.container .content .aka
+{
+	width: 90%;
+	height: 120rpx;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 auto;
+	border-bottom: 1.5px solid white;
+
+}
+.content .aka image
+{
+	width: 90rpx;
+	height: 90rpx;
+	position: absolute;
+	left: 10rpx;
+}
+.content .aka .title
+{
+	width: 40%;
+	height: 50rpx;
+	position: absolute;
+	left: 110rpx;
+}
+.content .aka .detail
+{
+	width: 70%;
+	position: absolute;
+	left: 110rpx;
+	top: 50rpx;
+	overflow: hidden;
+	font-size: 30rpx;
+}
+.content .aka .detail .cont
+{
+	font-size: 30rpx;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.content .aka .detail .des
+{
+	width: 100%;
+}
+.content .aka .tip
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20rpx;
+}
+.content .aka .tip image
+{
+	width: 20rpx;
+	height: 20rpx;
+	position: aboslute;
+	left: 50%;
+}
+.content .aka .cancel
+{
+	position: absolute;
+	right: 10rpx;
+	font-size: 25rpx;
+	width: 70rpx;
+	text-align: center;
+	background-color: #ff4200;
+	color: white;
+	height: 37rpx;
+	border-radius: 17rpx;
+	line-height: 32rpx;
+	top: 43rpx;
+}
+.content .aka .confirm
+{
+	position: absolute;
+	right: 0rpx;
+	font-size: 21rpx;
+	width: 90rpx;
+	text-align: center;
+	background-color: #ff4200;
+	color: white;
+	height: 37rpx;
+	border-radius: 17rpx;
+	line-height: 32rpx;
+	bottom: 0rpx;
+	display: none;
+}
+.content .aka .contact
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100rpx;
+	
+}

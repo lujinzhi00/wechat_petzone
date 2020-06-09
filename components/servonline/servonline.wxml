@@ -1,0 +1,28 @@
+
+	<block wx:for="{{list}}" wx:key="item">
+			<view class="mission-item">
+				<view class="head">
+					<image src="../../icons/missionlist.png"></image>
+					<view class="title"><text>{{item.title}}</text></view>
+					<view class="cancel">
+						<view class="btn {{cflag?'':'hide'}}" bindtap="onCancel" data-id="{{item.id}}">取消</view>
+						<view class="btn {{cflag?'hide':''}}" bindtap="onReCancel" data-id="{{item.id}}">取消</view>
+					</view>
+				</view>
+				<view class="content {{imgcurrent===index&flag?'show':'hide'}}">
+					<view class="cflex">
+						<view><text>{{item.description}}</text></view>
+						<view class="receive">
+							<view>
+								<text>联系电话：{{item.tellphone}}</text><text>微信：{{item.wechat}}</text>
+							</view>
+							<view class="but {{cflag?'':'hide'}}" bindtap="onFinish" data-id="{{item.id}}">确认</view>
+						</view>
+					</view>
+				</view>
+				<view class="tip" data-current="{{index}}" bindtap="onChange">
+					<image src="{{imgcurrent===index&flag?eimg:simg}}"></image>
+				</view>
+			</view>
+	</block>
+

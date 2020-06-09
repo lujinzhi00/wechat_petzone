@@ -1,0 +1,22 @@
+
+	<block wx:for="{{list}}" wx:key="item">
+			<view class="mission-item">
+				<view class="head">
+					<image src="{{item.state==7?bimg:wimg}}"></image>
+					<view class="title"><text>{{item.title}}</text></view>
+					<view class="cancel {{item.state==7?'hide':''}}">
+						<view class="btn {{dflag?'':'hide'}}" bindtap="onCancel" data-id="{{item.id}}">取消</view>
+						<view class="btn {{dflag^cflag?'':'hide'}}" bindtap="onadel" data-id="{{item.id}}">删除</view>
+						<view class="btn {{cflag?'hide':''}}" bindtap="onrdel" data-id="{{item.id}}">删除</view>
+					</view>
+					<view class="cancel {{item.state==7?'':'hide'}}">
+						<view class="btn" bindtap="ondelit" data-id="{{item.id}}">删除</view>
+					</view>
+				</view>
+				<view class="content {{imgcurrent===index&flag?'show':'hide'}}"><text>{{item.description}}</text></view>
+				<view class="tip" data-current="{{index}}" bindtap="onChange">
+					<image src="{{imgcurrent===index&flag?eimg:simg}}"></image>
+				</view>
+			</view>
+	</block>
+
